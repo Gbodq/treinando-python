@@ -1,4 +1,4 @@
-# A lógica está correta, mas as variáveis estão com os nomes incorretos
+# A lógica está correta, mas as variáve
 even_numbers = []
 for number in range(1,11):
  even_numbers.append(number**3)

@@ -1,3 +1,4 @@
+# Muito boa a lógica!
 numbers = [number**3 for number in range(1,11)]
 print("Os três primeiros itens da lista são:")
 for numeros in numbers[0:3]:
