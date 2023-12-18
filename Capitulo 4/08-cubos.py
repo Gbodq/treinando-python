@@ -1,5 +1,6 @@
 # A lógica está correta, mas as variáve
-even_numbers = []
+numbers = []
 for number in range(1,11):
- even_numbers.append(number**3)
-print(even_numbers)
+    
+    numbers.append(number**3)
+    print(numbers)
