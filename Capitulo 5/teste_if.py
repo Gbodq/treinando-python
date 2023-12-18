@@ -31,14 +31,19 @@
 # print('mushrooms' in requested_toppings)
 # print('cereja' in requested_toppings)
 
-pizzas = ["pepperoni", 'queijo extra']
+sabores_disponiveis = ["pepperoni", 'carne', "camarão"]
+sabores_pedidos = ["camarão",'carne']
+pizzas_indisponiveis = []
 
-if "pepperoni" in pizzas:
-    print("adicione pepperoni.")
-if "cogumelos" in pizzas:
-    print("adicione cogumelos")
-if "queijo extra" in pizzas:
-    print("adicione queijo extra")
+for sabor_pedido in sabores_pedidos:
+    if sabor_pedido not in sabores_disponiveis:
+        pizzas_indisponiveis.append(sabor_pedido)
 
-print("\n pizza finalizada!")
-  
+if pizzas_indisponiveis:
+    print("fazendo sua pizza!")
+else:
+    print(f"sabores indisponveis: {pizzas_indisponiveis}")
+
+
+
+        
