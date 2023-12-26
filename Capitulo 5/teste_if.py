@@ -32,7 +32,7 @@
 # print('cereja' in requested_toppings)
 
 sabores_disponiveis = ["pepperoni", 'carne', "camarão"]
-sabores_pedidos = ["camarão",'carne']
+sabores_pedidos = ["camarão",'queijo']
 pizzas_indisponiveis = []
 
 for sabor_pedido in sabores_pedidos:
@@ -40,10 +40,9 @@ for sabor_pedido in sabores_pedidos:
         pizzas_indisponiveis.append(sabor_pedido)
 
 if pizzas_indisponiveis:
-    print("fazendo sua pizza!")
-else:
     print(f"sabores indisponveis: {pizzas_indisponiveis}")
-
+else:
+    print("fazendo sua pizza!")
 
 
         
