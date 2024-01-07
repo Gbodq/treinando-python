@@ -25,7 +25,7 @@ numbers = [2,8,6,10,7,5,9,4,3,1]
 n = len(numbers)
 for pos_inicial in range(n):
     min_pos = pos_inicial
-    for index in range(pos_inicial, n):
+    for index in range(pos_inicial+1, n):
        if numbers[min_pos] >  numbers[index]:
         min_pos = index
     numbers[min_pos], numbers[pos_inicial] = numbers[pos_inicial], numbers[min_pos]
